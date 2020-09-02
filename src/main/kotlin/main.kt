@@ -32,7 +32,7 @@ fun main() {
     val previousPurchasesAmount = readLine()!!.toInt()
     val previousPurchasesDiscount: Double = when {
         previousPurchasesAmount <= 1000 -> purchaseAmount.toDouble()
-        previousPurchasesAmount > 1000 && previousPurchasesAmount <= 10000 -> (purchaseAmount - (purchaseAmount - 100)).toDouble()
+        previousPurchasesAmount > 1000 && previousPurchasesAmount <= 10000 -> 100.0
         else -> purchaseAmount * 0.05
     }
 
